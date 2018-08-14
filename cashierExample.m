@@ -5,13 +5,13 @@
 % each item a customer has.
 
 maxTime = 1000;
-numCashiers = 5;
+numCashiers = 3;
 lanes = zeros(maxTime,numCashiers); %This size was chosen so that no overflow is possible
 lanePos = ones(1,numCashiers); % Which position in the lane is next
 customerLambda = 10; %
 itemLambda = 30;
 rates = [10,10,10];
-timeToNext = exprnd(customerLambda); % See when the next customer arrives
+timeToNext = ceil(exprnd(customerLambda)); % See when the next customer arrives
 peopleOverTime = zeros(maxTime,numCashiers);
 
 % Simulate each time step
@@ -41,7 +41,7 @@ for i = 1:maxTime
     openLanes = find(itemsPerLane == 0);
     timeToNext = timeToNext - 1;
     if timeToNext <= 0
-        timeToNext = exprnd(customerLambda);
+        timeToNext = ceil(exprnd(customerLambda));
         if min(size(openLanes)) > 0
             nextLane = openLanes(randi(max(size(openLanes))));
         else
