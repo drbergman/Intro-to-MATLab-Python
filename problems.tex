@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+
+\newtheorem{problem}{Problem}
+
+\begin{document}
+
+\title{UCI Math Department's Intro to MATLab/Python--Problem Set}
+\maketitle
+
+With each of the following problems, see if you can minimize compute time, lines of code, or both!
+
+\begin{problem}
+Create a function to test if a number is prime. Then, write a script which takes in user input and tells the user if the input is prime or not.
+\end{problem}
+
+\begin{problem}
+Consider the famous Lotka-Volterra equations used in predator-prey models:
+
+\begin{align*}
+\frac{dx}{dt} & = \alpha x - \beta xy \\
+\frac{dy}{dt} & = \delta xy - \gamma y
+\end{align*}
+
+Create a phase diagram for positive parameter values by plotting several trajectories in the $xy$-plane with distinct initial conditions.
+
+\end{problem}
+
+\begin{problem}
+
+Write a function that takes in a Markov Transition Matrix and outputs the absorbing states.
+Make sure that your function checks that the input actually is a Markov Matrix!
+Test your code by creating a Markov Transition Matrix and iterating $N$ times and see if you get convergence to the absorbing state(s).
+
+\end{problem}
+
+
+\end{document}
