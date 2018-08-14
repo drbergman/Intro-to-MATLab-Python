@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[centertags]{amsmath}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+
+\newtheorem{project}{Project}
+
+\begin{document}
+
+\title{A Brief Intro to Scientific Computing--Mini-Projects}
+\maketitle
+
+\begin{project}
+
+Integer Chains: An integer chain is defined as a sequence of integers $(x_i)_{i=1}^k$ such that for any two consecutive integers,
+one is a factor of the other.
+Given $N\in \mathbb{Z}$,
+we are interested in finding the length of the longest integer chain in $S = \{k \in \mathbb{Z} | 1\le k \le N\}$.
+Write code to answer this question for general $N$ and answer it for $N = 25$.
+In addition, you can attempt to write your code to run quicker (mine takes 176 seconds using a parfor loop and 450 seconds using a regular for loop) and to use fewer lines (mine uses 29 lines of code).
+
+\end{project}
+
+\begin{project}
+
+Neural Networks: (Note: This is taken directly from the UCI Data Science Initiative (DSI) github: 
+\href{https://github.com/UCIDataScienceInitiative/LearningWithPython}{https://github.com/UCIDataScienceInitiative/LearningWithPython})
+Use Python's tensorflow and/or keras packages to build and train neural nets.
+You can use them to discriminate Higgs bosons, classify pictures of animals, classify handwritten numbers, or anything else you desire.
+
+\end{project}
+
+\end{document}
