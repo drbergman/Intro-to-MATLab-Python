@@ -2,7 +2,7 @@
 
 1. email jfarran@uci.edu with your UCINetID requesting an account
 2. open a Terminal session (Mac: Terminal, Windows: putty, Linux: you know what's up)
-3. ssh UCINetID@hpc.oit.uci.edu
+3. enter `ssh UCINetID@hpc.oit.uci.edu`
 4. your UCINetID password is your password
 5. optional: google UCI HPC, find the page I'm reading from, and setup passwordless ssh
 6. google UCI HPC and find the page I'm reading from
