@@ -11,6 +11,7 @@
 9. If you want to interactively work on the HPC (rather than start a program and walk away), enter: `qrsh` and plug away
 10. Mostly, you'll want to login, move/edit some files, submit a job (i.e. request to start a program), and then logoff to wait for the program to finish. For this, you'll write a qsub script:
 
+```
 ##############################################
 #!/bin/bash
 
@@ -23,7 +24,7 @@
 # BASH CODE GOES HERE
 #######################
 ##############################################
-
+```
 
 
 
