@@ -12,7 +12,6 @@
 10. Mostly, you'll want to login, move/edit some files, submit a job (i.e. request to start a program), and then logoff to wait for the program to finish. For this, you'll write a qsub script:
 
 ```
-##############################################
 #!/bin/bash
 
 # the following are called flags and are optional. there are many and you should probably use some each time
@@ -23,7 +22,6 @@
 #######################
 # BASH CODE GOES HERE
 #######################
-##############################################
 ```
 
 
