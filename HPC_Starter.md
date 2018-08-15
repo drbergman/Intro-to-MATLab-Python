@@ -41,20 +41,18 @@ You'll need to play around a bit with exactly how the Bash code should look, but
 
 1. Successfully carry out the above steps.
 2. Get your code on the HPC (write the file on the HPC or find some method of moving a file on your local machine to the HPC such a rsync)
-3. `module load MATLAB' to load matlab on your current node
-4. `mcc -m main.m' to compile your matlab code into a format that does not require the use of a matlab license to run. even if main.m calls other m-files, the compiler will figure that out and connect them all. ideally, main.m is a function and you call save at the end to save/savefig whatever data/figures you want
+3. `module load MATLAB` to load matlab on your current node
+4. `mcc -m main.m` to compile your matlab code into a format that does not require the use of a matlab license to run. even if main.m calls other m-files, the compiler will figure that out and connect them all. ideally, main.m is a function and you call save at the end to save/savefig whatever data/figures you want
 5. this will generate an executable file called main. Replace # BASH CODE GOES HERE with `./main $INPUTVARIABLE1 $INPUTVARIABLE2`
 6. submit your qsub script (see 13 from above)
 7. If your main.m has input variables, you probably got an error. This is because bash is dumb and passes your inputs in to matlab as strings, not numbers. the only way I know to deal with this is to change the beginning of your code:
 
-##############################################
+```matlab
 function y = main(x)
 
 x = str2double(x);
 y = x.^2;
-##############################################
-
-
+```
 
 # Parallelization on the HPC:
 
