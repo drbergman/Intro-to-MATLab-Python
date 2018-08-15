@@ -15,7 +15,7 @@
 #!/bin/bash
 
 # the following are called flags and are optional. there are many and you should probably use some each time
-#$ -q free64 # the queue you want to run your code. you can enter `q' to see a list of available queues
+#$ -q free64 # the queue you want to run your code. you can enter `q` to see a list of available queues
 #$ -N myjobsname
 #$ -m beas		# send me an email when my job (b)egins, (e)nds, (a)borts, and (s)uspends
 
@@ -30,7 +30,7 @@
 You'll need to play around a bit with exactly how the Bash code should look, but we'll provide an example for matlab code soon.
 
 
-11. To make this qsub script, create a new file (you can type `nano qsub_ex.sh`) and copy paste the above code. If you don't have your own bash code to run, go ahead and use `echo Hello world!'
+11. To make this qsub script, create a new file (you can type `nano qsub_ex.sh`) and copy paste the above code. If you don't have your own bash code to run, go ahead and use `echo Hello world!`
 12. Save your file and exit out of the editor (ctrl-o to save and ctrl-x to exit using the nano editor on a Mac)
 13. Submit your job by entering `qsub qsub_ex.sh`
 14. See the status by entering `qstat -u $USER`
