@@ -57,8 +57,8 @@ y = x.^2;
 # Parallelization on the HPC:
 
 1. If you want to run your program multiple, independent times (for checking different parameter values, or processing different-but-similar files) you can create a job array!
-2. add the following flag to your qsub script: `#$ -t 1-10'
-3. Now you can access the task id using `$SGE_TASK_ID' to index your parameter vector or file naming system or whatever.
-4. For parameters, I like to let matlab handle all that (I'm more familiar with it than bash), so I make the task ID an input to my main.m function. this is then the last line of my qsub script: `./main $SGE_TASK_ID'
+2. add the following flag to your qsub script: `#$ -t 1-10`
+3. Now you can access the task id using `$SGE_TASK_ID` to index your parameter vector or file naming system or whatever.
+4. For parameters, I like to let matlab handle all that (I'm more familiar with it than bash), so I make the task ID an input to my main.m function. this is then the last line of my qsub script: `./main $SGE_TASK_ID`
 5. Submit a job array to find the sum of the first N integers.
 
