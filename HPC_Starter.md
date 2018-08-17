@@ -18,6 +18,7 @@
 #$ -q free64 # the queue you want to run your code. you can enter `q` to see a list of available queues
 #$ -N myjobsname
 #$ -m beas		# send me an email when my job (b)egins, (e)nds, (a)borts, and (s)uspends
+#$ -l mem_free=2G # requesting 2GB free RAM
 
 #######################
 # BASH CODE GOES HERE
